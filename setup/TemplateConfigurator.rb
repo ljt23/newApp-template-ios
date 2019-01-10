@@ -111,7 +111,7 @@ module Pod
     end
 
     def clean_template_files
-      [".git", "README.md", "LICENSE", "setup"].each do |asset|
+      [".git", "configure", "README.md", "LICENSE", "setup"].each do |asset|
         `rm -rf #{asset}`
       end
     end

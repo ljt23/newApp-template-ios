@@ -73,6 +73,13 @@ module Pod
 
     def replace_internal_project_settings
       Dir.glob(project_folder + "/**/**/**/**").each do |name|
+        if name.include?("setup") then
+          next
+        end
+        if name.include?("configure") then
+          next
+        end
+
         next if Dir.exists? name
         text = File.read(name)
 
