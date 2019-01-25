@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://code.bkjk-inc.com/scm/mf/bkjfspecs_ios.git'
 
-target '${POD_NAME}_Example' do
+target '${POD_NAME}' do
   pod 'BKJFUtils'
   pod 'BKJFStyle'
   pod 'BKJFEncrypt'
